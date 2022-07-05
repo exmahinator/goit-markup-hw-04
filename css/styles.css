@@ -3,7 +3,9 @@
 /* Secondary text color: #212121 */
 /* Right part of logo color in header: #000000 */
 /* Right part of logo color in footer: #ffffff */
-/* Background color of Hero and Footer: #2F303A */
+/* Background color of Temp Hero and Footer: #2F303A */
+/* Bckground color 1st layer of Hero: #c4c4c4 */
+/* Background color 3rd layer of Hero, gradient: #2F303A */
 /* Background color of overall body: #ffffff */
 /* Team section background color, portfolio button color: #F5F4FA */
 /* Footer address text color: rgba(255, 255, 255, 0.6) */
@@ -28,8 +30,14 @@
     /* Header grid color */
     --header-grid: #ECECEC;
 
-    /* Hero background color */
-    --hero-background: #2F303A;
+    /* Temp Hero and Footer background color */
+    --temp-background: #2F303A;
+
+    /* 1st layer Hero background color */
+    --hero-background: #c4c4c4;
+
+    /* 3rd layer Hero background color, gradient */
+    --hero-gradient: #2f303a66;
 
     /* Hero header and button text color */
     --hero-text: #ffffff;
@@ -219,10 +227,23 @@
 /* Hero */
 
 .hero {
-    background-color: var(--hero-background, #2F303A);
+    background-color: var(--hero-background, #c4c4c4);
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+}
+
+.hero-background {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: linear-gradient(to right, var(--hero-gradient, #2f303a66), var(--hero-gradient, #2f303a66)),
+    url(../images/hero-background-img-sq.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-title {
@@ -271,8 +292,8 @@
     margin-right: 0;
 }
 
-.advantages-subtitle {
-    margin-top: 0;
+.advantages-subtitle,
+.social-links-subtitle {
     margin-bottom: 10px;
 
     font-weight: 700;
@@ -299,8 +320,11 @@
     display: flex;
 }
 
+/* Most of titles has same fonts and weight */
+
 .we-do-title,
-.team-title {
+.team-title,
+.regular-clients-title {
     margin-bottom: 50px;
     
     font-weight: 700;
@@ -382,7 +406,12 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    background-color: var(--hero-background, #2F303A);
+    background-color: var(--temp-background, #2F303A);
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
 }
 
 /* Logo footer*/
@@ -412,6 +441,21 @@
 
 .address-transparent {
     color: var(--footer-transparent, rgba(255, 255, 255, 0.6))
+}
+
+.social-links-footer {
+    margin-left: 70px;
+    padding: 0;
+}
+
+.social-links-subtitle {
+    margin-bottom: 20px;
+
+    color: var(--footer-text, #ffffff);
+}
+
+.social-links-footer-list {
+    display: flex;
 }
 
 /* --------------------------------------Portfolio-------------------------------------- */
