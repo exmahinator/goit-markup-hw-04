@@ -1,0 +1,547 @@
+/* Accent color, hero button color, left part of logo color: #2196F3 */
+/* Main text color: #757575 */
+/* Secondary text color: #212121 */
+/* Right part of logo color in header: #000000 */
+/* Right part of logo color in footer: #ffffff */
+/* Background color of Hero and Footer: #2F303A */
+/* Background color of overall body: #ffffff */
+/* Team section background color, portfolio button color: #F5F4FA */
+/* Footer address text color: rgba(255, 255, 255, 0.6) */
+/* Portfolio item border color: #eeeeee */
+
+:root {
+    /* Accent color, hero button color, left part of logo color, active state portfolio button */
+    --accent: #2196F3;
+
+    /* Main text color */
+    --main-text: #757575;
+
+    /* Secondary text color */
+    --secondary-text: #212121;
+
+    /* Main body color */
+    --body-background: #ffffff;
+
+    /* Right part of logo color in header */
+    --header-logo: #000000;
+
+    /* Header grid color */
+    --header-grid: #ECECEC;
+
+    /* Hero background color */
+    --hero-background: #2F303A;
+
+    /* Hero header and button text color */
+    --hero-text: #ffffff;
+
+    /* Hero button hover and focus background color */
+    --hero-state-background: #F5F4FA;
+
+    /* Hero button hover and focus text color */
+    --hero-state-text: #212121;
+
+    /* Team section background color */
+    --team-background: #F5F4FA;
+
+    /* Team item background color */
+    --team-item: #ffffff;
+
+    /* Portfolio button background color */
+    --portfolio-button: #F5F4FA;
+
+    /* Portfolio button hover and focus text color */
+    --portfolio-state: #ffffff;
+
+    /* Portfolio item background color */
+    --portfolio-item: #ffffff;
+
+    /* Portfolio item border color */
+    --portfolio-item-border: #eeeeee;
+    
+    /* Footer background */
+    --footer-background: #2F303A;
+
+    /* Right part of logo color in footer */
+    --footer-logo: #ffffff;
+    
+    /* Footer text color */
+    --footer-text: #ffffff;
+
+    /* Footer text transparent color */
+    --footer-transparent: rgba(255,255,255,0.6);
+
+}
+
+/* Body */
+
+.body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    background-color: var(--body-background, #ffffff);
+    color: var(--main-text, #757575);
+}
+
+/* Reset unordered list */
+
+.list-reset {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Reset link */
+
+.link-reset {
+    text-decoration: none;
+    font-style: normal;
+}
+
+/* Reset title */
+
+.title-reset {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Common additional class - container */
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Sections */
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* --------------------------------------Index-------------------------------------- */
+
+/* Header and navigation */
+/* Logo header*/
+
+.header {
+    border-bottom: 1px solid var(--header-grid, #ececec);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation menu */
+
+.navigation-menu {
+    display: flex;
+}
+
+.logo {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.logo-header {
+    color: var(--header-logo, #000000);
+}
+
+.logo-accent {
+    color: var(--accent, #2196F3);
+}
+
+.navigation-list {
+    display: flex;
+    margin-left: 93px;
+}
+
+.nav-studio {
+    margin-right: 50px;
+}
+
+.nav-portfolio {
+    margin-right: 51px;
+}
+
+/* .navigation-list li, .contacts-link {
+    outline: 1px solid red;
+} */
+
+.navigation-contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts-item + .contacts-item {
+    margin-left: 50px;
+}
+
+.nav-link,
+.contacts-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--secondary-text, #212121);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.contacts-link {
+    color: var(--main-text, #757575);
+}
+
+/* Hero */
+
+.hero {
+    background-color: var(--hero-background, #2F303A);
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.hero-title {
+    width: 690px;
+    margin: 0 auto 30px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--hero-text, #ffffff);
+}
+
+.hero-button {
+    min-width: 200px;
+    border-radius: 4px;
+    padding: 10px 32px;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    background-color: var(--accent, #2196F3);
+    color: var(--hero-text, #ffffff);
+    border-color: transparent;
+
+    cursor: pointer;
+}
+
+/* Our advantages */
+
+.advantages-list {
+    display: flex;
+}
+
+.advantages-item {
+    /* 100% - 120px because there is additional 15px padding in section,
+    so instead of 30*3 margin between items there will be 30*3 + 30px padding (right + left) */
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+}
+
+.advantages-item:nth-child(4n) {
+    margin-right: 0;
+}
+
+.advantages-subtitle {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--secondary-text, #212121);
+}
+
+.advantages-paragraph {
+    margin: 0;
+    margin-top: 10px;
+}
+
+/* What we are doing */
+
+/* Rewrote class .section for we-do section because distance between we-do section and advantages was 188px in total instead of 94px what is not correct,
+    regarding model */
+.we-do {
+    padding-top: 0;
+}
+
+.we-do-list {
+    display: flex;
+}
+
+.we-do-title,
+.team-title {
+    margin-bottom: 50px;
+    
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--secondary-text, #212121);
+}
+
+.we-do-item {
+    /* 100% - 120px because there is additional 15px padding in section,
+    so instead of 30*2 margin between items there will be 30*3 + 30px padding (right + left) */
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+}
+
+.we-do-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.we-do-image {
+    display: block;
+}
+
+/* Our team */
+.team {
+    background-color: var(--team-background, #F5F4FA);
+    text-align: center;
+}
+
+.team-list {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.team-members {
+    width: calc((100% - 90) / 4);
+    margin-right: 30px;
+    padding-top: 0;
+    padding-bottom: 30px;
+
+    background-color: var(--team-item, #ffffff);
+}
+
+.team-members:nth-child(4n) {
+    margin-right: 0;
+}
+
+/* .team-members + .team-members {
+    margin-left: 30px;
+} */
+
+.members-photo {
+    display: block;
+}
+
+.members-name,
+.members-title {
+    margin-top: 0;
+
+    font-size: 16px;
+    line-height: 1.18;    
+}
+
+.members-name {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    color: var(--secondary-text, #212121);    
+}
+.members-title {
+    margin-bottom: 0;
+}
+
+/* Footer */
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: var(--hero-background, #2F303A);
+}
+
+/* Logo footer*/
+.logo-footer {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    color: var(--footer-logo, #ffffff);
+}
+
+.address-list {
+    margin-top: 20px;
+}
+
+.address-item {
+    margin: 0 0 9px 0;
+}
+
+.address-item:last-child {
+    margin-bottom: 0;
+}
+
+.address-link {
+    line-height: 1.71;
+    color: var(--footer-text, #ffffff);
+}
+
+.address-transparent {
+    color: var(--footer-transparent, rgba(255, 255, 255, 0.6))
+}
+
+/* --------------------------------------Portfolio-------------------------------------- */
+
+.portfolio-title {
+    visibility: hidden;
+}
+
+.button-block {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.portfolio-button {
+    display: block;
+    padding: 6px 22px 6px 22px;
+    border-radius: 4px;
+    min-width: 73px;
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    background-color: var(--portfolio-button, #F5F4FA);
+    color: var(--secondary-text, #212121);
+    text-align: center;
+    border-color: transparent;
+
+    cursor: pointer;
+}
+
+.button-item + .button-item {
+    margin-left: 8px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio-item {
+    width: calc((100% - 60px) / 3);
+    padding-top: 0;
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    background-color: var(--portfolio-item, #ffffff);
+}
+
+.portfolio-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.portfolio-item:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+
+.portfolio-summary {
+    padding: 20px 24px;
+    width: 370px;
+
+    border-right: 1px solid var(--portfolio-item-border);
+    border-bottom: 1px solid var(--portfolio-item-border);
+    border-left: 1px solid var(--portfolio-item-border);
+}
+
+.portfolio-image {
+    display: block;
+}
+
+.portfolio-company {
+    margin: 0;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--secondary-text, #212121);
+}
+
+.portfolio-product {
+    margin-top: 4px;
+    margin-bottom: 0;
+
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+
+
+/* --------------------------------------States-------------------------------------- */
+/* Between those comments will be "visited" state for links */
+/* Between those comments will be "visited" state for links */
+
+/* Hover, focus */
+
+.nav-link:hover,
+.nav-link:focus,
+.contacts-link:hover,
+.contacts-link:focus,
+.address-link:hover,
+.address-link:focus {
+    color: var(--accent, #2196F3);
+}
+
+/* Between those comments will be "active" state for links */
+.current-active {
+    color: var(--accent, #2196F3);
+}
+
+/* Between those comments will be "active" state for links */
+
+/* Between those comments will be "visited" state for buttons */
+/* Between those comments will be "visited" state for buttons */
+
+/* Hover, focus */
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--hero-state-background, #F5F4FA);
+    color: var(--hero-state-text, #212121);
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+    background-color: var(--accent, #2196F3);
+    color: var(--portfolio-state, #ffffff);
+}
+
+/* Between those comments will be "active" state for buttons */
+/* Between those comments will be "active" state for buttons */
