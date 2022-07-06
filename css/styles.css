@@ -366,17 +366,15 @@
     margin-right: 30px;
     padding-top: 0;
     padding-bottom: 30px;
+    border-radius: 0px 0px 4px 4px;
 
     background-color: var(--team-item, #ffffff);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-members:nth-child(4n) {
     margin-right: 0;
 }
-
-/* .team-members + .team-members {
-    margin-left: 30px;
-} */
 
 .members-photo {
     display: block;
@@ -550,6 +548,9 @@
 
 
 /* --------------------------------------States-------------------------------------- */
+
+/* Index */
+
 /* Between those comments will be "visited" state for links */
 /* Between those comments will be "visited" state for links */
 
@@ -571,6 +572,8 @@
 
 /* Between those comments will be "active" state for links */
 
+/* Portfolio */
+
 /* Between those comments will be "visited" state for buttons */
 /* Between those comments will be "visited" state for buttons */
 
@@ -579,13 +582,28 @@
 .hero-button:focus {
     background-color: var(--hero-state-background, #F5F4FA);
     color: var(--hero-state-text, #212121);
+    box-shadow: 0px 4px 4px #00000026;
 }
 
 .portfolio-button:hover,
 .portfolio-button:focus {
     background-color: var(--accent, #2196F3);
     color: var(--portfolio-state, #ffffff);
+    box-shadow: 0px 3px 1px #0000001a, 0px 1px 2px #00000014, 0px 2px 2px #0000001f;
 }
 
 /* Between those comments will be "active" state for buttons */
 /* Between those comments will be "active" state for buttons */
+
+/* Between those comments will be "visited" state for items */
+/* Between those comments will be "visited" state for items */
+
+/* Hover, focus */
+.portfolio-item:hover,
+.portfolio-item:focus {
+    /* border: 1px solid #EEEEEE; */
+    box-shadow: 0px 1px 1px #0000001f, 0px 4px 4px #0000000f, 1px 4px 6px #00000029;
+}
+
+/* Between those comments will be "active" state for items */
+/* Between those comments will be "active" state for items */
