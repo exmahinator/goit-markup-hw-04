@@ -8,7 +8,10 @@
 /* Background color 3rd layer of Hero, gradient: #2F303A */
 /* Background color of overall body: #ffffff */
 /* Team section background color, portfolio button color: #F5F4FA */
+/* Team social list background color: #ffffff */
+/* Our customers link basic color: #AFB1B8 */
 /* Footer address text color: rgba(255, 255, 255, 0.6) */
+/* Footer social links list background color: background: rgba(255, 255, 255, 0.1); */
 /* Portfolio item border color: #eeeeee */
 
 :root {
@@ -53,6 +56,18 @@
 
     /* Team item background color */
     --team-item: #ffffff;
+
+    /* Team social list background color */
+    --team-social: #ffffff;
+
+    /* Team social list icons basic color */
+    --team-icons: #AFB1B8;
+
+    /* Our customers list icons basic color */
+    --customers-list: #AFB1B8;
+
+    /* Footer social links background color */
+    --footer-social: #ffffff1a;
 
     /* Portfolio button background color */
     --portfolio-button: #F5F4FA;
@@ -301,6 +316,36 @@
     color: var(--secondary-text, #212121);
 }
 
+.advantages-item::before {
+    content: '';
+
+    height: 120px;
+    margin-bottom: 30px;
+
+    display: block;
+    background-color: var(--hero-state-background, #f5f4fa);
+    border-radius: 4px;
+    /* background-image: url(../images/advantages-antenna-sq.png); */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-antenna::before {
+    background-image: url(../images/svg-opt/advantages-antenna-svgomg.svg);
+}
+
+.icon-clock::before {
+    background-image: url(../images/svg-opt/advantages-clock-svgomg.svg);
+}
+
+.icon-diagram::before {
+    background-image: url(../images/svg-opt/advantages-diagram-svgomg.svg);
+}
+
+.icon-astronaut::before {
+    background-image: url(../images/svg-opt/advantages-astronaut-svgomg.svg);
+}
+
 .advantages-paragraph {
     margin: 0;
     margin-top: 10px;
@@ -322,7 +367,7 @@
 
 .we-do-title,
 .team-title,
-.regular-clients-title {
+.regular-customers-title {
     margin-bottom: 50px;
     
     font-weight: 700;
@@ -363,7 +408,6 @@
     width: calc((100% - 90) / 4);
     margin-right: 30px;
     padding-top: 0;
-    padding-bottom: 30px;
     border-radius: 0px 0px 4px 4px;
 
     background-color: var(--team-item, #ffffff);
@@ -378,6 +422,11 @@
     display: block;
 }
 
+.member-info {
+    width: 100%;
+    padding: 30px 32px;
+}
+
 .members-name,
 .members-title {
     margin-top: 0;
@@ -387,14 +436,72 @@
 }
 
 .members-name {
-    margin-top: 30px;
     margin-bottom: 10px;
 
     font-weight: 500;
     color: var(--secondary-text, #212121);    
 }
 .members-title {
-    margin-bottom: 0;
+    margin-bottom: 16px;
+}
+
+/* Team and Footer social links icons */
+
+.team-social-list {
+    display: flex;
+}
+
+.team-social-item,
+.footer-social-item {
+    margin-right: 10px;
+}
+
+.team-social-link,
+.footer-social-link {
+    width: 44px;
+    height: 44px;
+
+    background-color: var(--team-social, #ffffff);
+    color: var(--team-icons, #AFB1B8);
+
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-social-item:last-child,
+.footer-social-item:last-child {
+    margin-right: 0;
+}
+
+/* Regular customers */
+
+.regular-cistomers-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.regular-customers-item {
+    width: calc((100% - 150px) / 6);
+    min-height: 92px;
+    margin-right: 30px;
+}
+
+.regular-customers-link {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+    border: 1px solid var(--customers-list, #AFB1B8);
+    border-radius: 4px;
+}
+
+.regular-customers-item:nth-child(6n) {
+    margin-right: 0;
 }
 
 /* Footer */
@@ -439,19 +546,24 @@
     color: var(--footer-transparent, rgba(255, 255, 255, 0.6))
 }
 
-.social-links-footer {
+.footer-social {
     margin-left: 70px;
     padding: 0;
 }
 
-.social-links-subtitle {
+.footer-social-subtitle {
     margin-bottom: 20px;
 
     color: var(--footer-text, #ffffff);
 }
 
-.social-links-footer-list {
+.footer-social-list {
     display: flex;
+}
+
+.footer-social-link {
+    background-color: var(--footer-social, #ffffff1a);
+    color: var(--footer-text, #ffffff);
 }
 
 /* --------------------------------------Portfolio-------------------------------------- */
@@ -553,11 +665,10 @@
 
 /* Index */
 
-/* Between those comments will be "visited" state for links */
-/* Between those comments will be "visited" state for links */
 
+/* Between those comments will be "visited" state for navigation, contacts, address links */
+/* Between those comments will be "visited" state for navigation, contacts, address links */
 /* Hover, focus */
-
 .nav-link:hover,
 .nav-link:focus,
 .contacts-link:hover,
@@ -566,49 +677,83 @@
 .address-link:focus {
     color: var(--accent, #2196F3);
 }
+/* Between those comments will be "active" state for navigation, contacts, address links */
+/* Between those comments will be "active" state for navigation, contacts, address links */
 
-/* Between those comments will be "active" state for links */
-/* Between those comments will be "active" state for links */
 
-/* Between those comments will be "visited" state for button */
-/* Between those comments will be "visited" state for button */
-
+/* Between those comments will be "visited" state for hero button */
+/* Between those comments will be "visited" state for hero button */
+/* Hover, focus */
 .hero-button:hover,
 .hero-button:focus {
     background-color: var(--hero-state-background, #F5F4FA);
     color: var(--hero-state-text, #212121);
     box-shadow: 0px 4px 4px #00000026;
 }
+/* Between those comments will be "active" state for hero button */
+/* Between those comments will be "active" state for hero button */
 
-/* Between those comments will be "active" state for button */
-/* Between those comments will be "active" state for button */
+
+/* Between those comments will be "visited" state for regular customers links */
+/* Between those comments will be "visited" state for regular customers links */
+/* Hover, focus */
+.team-social-link:hover,
+.team-social-link:focus {
+    background-color: var(--accent, #2196F3);
+    color: var(--team-social, #ffffff);
+}
+/* Between those comments will be "active" state for regular customers links */
+/* Between those comments will be "active" state for regular customers links */
+
+
+/* Between those comments will be "visited" state for regular customers links */
+/* Between those comments will be "visited" state for regular customers links */
+/* Hover, focus */
+.regular-customers-link:hover,
+.regular-customers-link:focus {
+    color: var(--accent, #2196F3);
+    border-color: var(--accent, #2196F3);
+}
+/* Between those comments will be "active" state for regular customers links */
+/* Between those comments will be "active" state for regular customers links */
+
+
+/* Between those comments will be "visited" state for footer social links */
+/* Between those comments will be "visited" state for footer social links */
+/* Hover, focus */
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: var(--accent, #2196F3);
+}
+/* Between those comments will be "active" state for footer social links */
+/* Between those comments will be "active" state for footer social links */
 
 /* Portfolio */
 
-/* Between those comments will be "visited" state for buttons */
-/* Between those comments will be "visited" state for buttons */
 
+/* Between those comments will be "visited" state for portfolio buttons */
+/* Between those comments will be "visited" state for portfolio buttons */
 /* Hover, focus */
-
 .portfolio-button:hover,
 .portfolio-button:focus {
     background-color: var(--accent, #2196F3);
     color: var(--portfolio-state, #ffffff);
     box-shadow: 0px 3px 1px #0000001a, 0px 1px 2px #00000014, 0px 2px 2px #0000001f;
 }
+/* Between those comments will be "active" state for portfolio buttons */
+/* Between those comments will be "active" state for portfolio buttons */
 
-/* Between those comments will be "active" state for buttons */
-/* Between those comments will be "active" state for buttons */
-
-/* Between those comments will be "visited" state for items */
-/* Between those comments will be "visited" state for items */
-
+/* Between those comments will be "visited" state for portffolio items */
+/* Between those comments will be "visited" state for portffolio items */
 /* Hover, focus */
-
 .portfolio-item:hover,
 .portfolio-item:focus {
     box-shadow: 0px 1px 1px #0000001f, 0px 4px 4px #0000000f, 1px 4px 6px #00000029;
 }
+/* Between those comments will be "active" state for portffolio items */
+/* Between those comments will be "active" state for portffolio items */
 
-/* Between those comments will be "active" state for items */
-/* Between those comments will be "active" state for items */
+
+/* Put SVG icon with Use
+<svg class="user-nav__icon" width="18px" height="18px"><use href="images/sprite.svg#icon-search"></use></svg>
+ */
