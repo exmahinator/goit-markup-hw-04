@@ -227,23 +227,21 @@
 /* Hero */
 
 .hero {
-    background-color: var(--hero-background, #c4c4c4);
-    text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
-}
-
-.hero-background {
     max-width: 1600px;
     height: 600px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-
+    
+    background-color: var(--hero-background, #c4c4c4);
     background-image: linear-gradient(to right, var(--hero-gradient, #2f303a66), var(--hero-gradient, #2f303a66)),
-    url(../images/hero-background-img-sq.jpg);
+            url(../images/hero-background-img-sq.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    text-align: center;
 }
 
 .hero-title {
