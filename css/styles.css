@@ -545,7 +545,11 @@
     line-height: 1.88;
 }
 
+/* "Active" state for page */
 
+.current-active {
+    color: var(--accent, #2196F3);
+}
 
 /* --------------------------------------States-------------------------------------- */
 
@@ -566,11 +570,20 @@
 }
 
 /* Between those comments will be "active" state for links */
-.current-active {
-    color: var(--accent, #2196F3);
+/* Between those comments will be "active" state for links */
+
+/* Between those comments will be "visited" state for button */
+/* Between those comments will be "visited" state for button */
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--hero-state-background, #F5F4FA);
+    color: var(--hero-state-text, #212121);
+    box-shadow: 0px 4px 4px #00000026;
 }
 
-/* Between those comments will be "active" state for links */
+/* Between those comments will be "active" state for button */
+/* Between those comments will be "active" state for button */
 
 /* Portfolio */
 
@@ -578,12 +591,6 @@
 /* Between those comments will be "visited" state for buttons */
 
 /* Hover, focus */
-.hero-button:hover,
-.hero-button:focus {
-    background-color: var(--hero-state-background, #F5F4FA);
-    color: var(--hero-state-text, #212121);
-    box-shadow: 0px 4px 4px #00000026;
-}
 
 .portfolio-button:hover,
 .portfolio-button:focus {
@@ -599,9 +606,9 @@
 /* Between those comments will be "visited" state for items */
 
 /* Hover, focus */
+
 .portfolio-item:hover,
 .portfolio-item:focus {
-    /* border: 1px solid #EEEEEE; */
     box-shadow: 0px 1px 1px #0000001f, 0px 4px 4px #0000000f, 1px 4px 6px #00000029;
 }
 
