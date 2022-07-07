@@ -535,12 +535,13 @@
     margin-right: 0;
 }
 
-.icon-customers-one {
+.icon-customers {
+    fill: var(--customers-list, #afb1b8);
+}
+
+/* .icon-customers-one {
     height: 47px;
     width: 41px;
-
-    /* max-height: 52px;
-    max-width: 94px; */
 
     fill: var(--customers-list, #afb1b8);
 }
@@ -578,7 +579,7 @@
     width: 94px;
 
     fill: var(--customers-list, #afb1b8);
-}
+} */
 
 /* Footer */
 .footer {
@@ -809,7 +810,7 @@
     border-color: var(--accent, #2196F3);
 }
 
-.regular-customers-link:hover .icon-customers-one,
+/* .regular-customers-link:hover .icon-customers-one,
 .regular-customers-link:focus .icon-customers-one,
 .regular-customers-link:hover .icon-customers-two,
 .regular-customers-link:focus .icon-customers-two,
@@ -822,7 +823,13 @@
 .regular-customers-link:hover .icon-customers-six,
 .regular-customers-link:focus .icon-customers-six {
     fill: var(--accent, #2196f3);
+} */
+
+.regular-customers-link:hover .icon-customers,
+.regular-customers-link:focus .icon-customers {
+    fill: var(--accent, #2196f3);
 }
+
 /* Between those comments will be "active" state for regular customers links */
 /* Between those comments will be "active" state for regular customers links */
 
