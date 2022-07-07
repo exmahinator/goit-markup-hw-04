@@ -328,8 +328,20 @@
     margin-right: 0;
 }
 
+.advantages-icon-container {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+
+    background-color: var(--team-background, #f5f4fa);
+    justify-content: center;
+    align-items: center;
+}
+
 .advantages-subtitle,
 .social-links-subtitle {
+    margin-top: 30px;
     margin-bottom: 10px;
 
     font-weight: 700;
@@ -339,7 +351,7 @@
     color: var(--secondary-text, #212121);
 }
 
-.advantages-item::before {
+/* .advantages-item::before {
     content: '';
 
     height: 120px;
@@ -366,7 +378,7 @@
 
 .icon-astronaut::before {
     background-image: url(../images/svg-opt/advantages-astronaut-svgomg.svg);
-}
+} */
 
 .advantages-paragraph {
     margin: 0;
