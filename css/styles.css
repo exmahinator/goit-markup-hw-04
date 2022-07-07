@@ -261,7 +261,6 @@
         url(../images/hero-background-img-sq.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain contain;
 }
 
 .hero-container {
