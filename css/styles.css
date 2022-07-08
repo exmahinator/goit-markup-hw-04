@@ -633,6 +633,7 @@
     margin-bottom: 20px;
 
     color: var(--footer-text, #ffffff);
+    text-transform: uppercase;
 }
 
 .footer-social-list {
@@ -777,9 +778,10 @@
 /* Hover, focus */
 .hero-button:hover,
 .hero-button:focus {
-    background-color: var(--hero-state-background, #F5F4FA);
-    color: var(--hero-state-text, #212121);
-    box-shadow: 0px 4px 4px #00000026;
+    /* background-color: var(--hero-state-background, #F5F4FA);
+    color: var(--hero-state-text, #212121); */
+    filter: drop-shadow(0px 4px 4px #00000040);
+    /* box-shadow: 0px 4px 4px #00000026; */
 }
 /* Between those comments will be "active" state for hero button */
 /* Between those comments will be "active" state for hero button */
@@ -810,21 +812,6 @@
     color: var(--accent, #2196F3);
     border-color: var(--accent, #2196F3);
 }
-
-/* .regular-customers-link:hover .icon-customers-one,
-.regular-customers-link:focus .icon-customers-one,
-.regular-customers-link:hover .icon-customers-two,
-.regular-customers-link:focus .icon-customers-two,
-.regular-customers-link:hover .icon-customers-three,
-.regular-customers-link:focus .icon-customers-three,
-.regular-customers-link:hover .icon-customers-four,
-.regular-customers-link:focus .icon-customers-four,
-.regular-customers-link:hover .icon-customers-five,
-.regular-customers-link:focus .icon-customers-five,
-.regular-customers-link:hover .icon-customers-six,
-.regular-customers-link:focus .icon-customers-six {
-    fill: var(--accent, #2196f3);
-} */
 
 .regular-customers-link:hover .icon-customers,
 .regular-customers-link:focus .icon-customers {
